@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "845821892066",
+    "project_id": "disaster-management-bc17a",
+    "storage_bucket": "disaster-management-bc17a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845821892066:android:d280ba6781b5a3ff8b55bb",
+        "android_client_info": {
+          "package_name": "com.tasneem.omandisastermanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845821892066-r8a2pushb8os4pqblftgni4umjemjsc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHlP22Owolag-r7distZ2Nuh3uLlWVUsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845821892066-r8a2pushb8os4pqblftgni4umjemjsc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

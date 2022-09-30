@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">OmanDisasterManagement</string>
+
+    <string name="gender">Select Gender</string>
+
+    <string-array name="gender_list">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="cars_list">
+        <item>4WD</item>
+        <item>Heavy vehicles</item>
+        <item>Water supply</item>
+        <item>PICKUP</item>
+        <item>Truck</item>
+        <item>Sedan</item>
+    </string-array>
+
+    <string-array name="jobs_list">
+        <item>Doctor</item>
+        <item>retired</item>
+        <item>Medical supplier </item>
+    </string-array>
+
+    <string-array name="skills_list">
+        <item>electrician</item>
+        <item>mechanic</item>
+        <item>plumping</item>
+    </string-array>
+
+    />
+
+</resources>

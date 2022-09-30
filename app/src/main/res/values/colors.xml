@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="RED_color">#da161a</color>
+    <color name="green_color">#037f05</color>
+    <color name="green2_color">#F53FA841</color>
+    <color name="background_color">#f9f9f9</color>
+
+    <color name="colorActivated">#F00000</color>
+    <color name="colorDeactivated">#900000</color>
+
+    <color name="critical">#FFC107</color>
+    <color name="injuries">#08600B</color>
+    <color name="deaths">#CF1C19</color>
+    <color name="missed">#EC82A6</color>
+
+
+    <color name="color_one">#fb7268</color>
+    <color name="color_white">#ededf2</color>
+    <color name="color_two">#E3E0E0</color>
+
+</resources>

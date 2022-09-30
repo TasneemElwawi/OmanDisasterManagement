@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:menu="@menu/toolbar_menu"
+    app:titleTextAppearance="@font/roboto_bold"
+    app:titleMarginStart="@dimen/_30sdp"
+    app:titleMarginTop="@dimen/_10sdp"
+    android:theme="@style/ToolbarTheme"/>

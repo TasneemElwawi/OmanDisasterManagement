@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ToBeVolunteer">
+
+    <Spinner
+        android:id="@+id/skills"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/skills_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <Spinner
+        android:id="@+id/carSpinner2"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/jobs_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <Button
+        android:id="@+id/addVOLUNTEERRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/roboto_bold"
+        android:padding="15dp"
+        android:text="Add request"
+        android:textSize="14sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skills" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Skills :"
+        android:textColor="@color/green_color"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="@+id/carSpinner2"
+        app:layout_constraintTop_toBottomOf="@+id/carSpinner2" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Job :"
+        android:textColor="@color/green_color"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="@+id/carSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/carSpinner" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="If you want to be a volunteer, fill this information"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Add Volunteer Request"
+        android:textColor="@color/green_color"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Spinner
+        android:id="@+id/carSpinner"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/cars_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Car Type: "
+        android:textColor="@color/green_color"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

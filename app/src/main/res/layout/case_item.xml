@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:cardElevation="@dimen/_4sdp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@drawable/card_rectangle"
+            android:padding="@dimen/_4sdp">
+
+            <TextView
+                android:id="@+id/unPaidTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:text="TextView"
+                android:textColor="@color/RED_color"
+                app:layout_constraintBottom_toBottomOf="@+id/name2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toEndOf="@+id/name2"
+                app:layout_constraintTop_toTopOf="@+id/name2" />
+
+            <TextView
+                android:id="@+id/providedTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="TextView"
+                android:textColor="@color/green2_color"
+                app:layout_constraintBottom_toBottomOf="@+id/detailsTV5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toEndOf="@+id/detailsTV5"
+                app:layout_constraintTop_toTopOf="@+id/detailsTV5" />
+
+            <TextView
+                android:id="@+id/volunteerNamee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/detailsTV6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toEndOf="@+id/detailsTV6"
+                app:layout_constraintTop_toTopOf="@+id/detailsTV6" />
+
+            <TextView
+                android:id="@+id/missedTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/detailsTV4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toEndOf="@+id/detailsTV4"
+                app:layout_constraintTop_toTopOf="@+id/detailsTV4" />
+
+            <TextView
+                android:id="@+id/roadDescriptTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/detailsTV2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toEndOf="@+id/detailsTV2"
+                app:layout_constraintTop_toTopOf="@+id/detailsTV2" />
+
+            <TextView
+                android:id="@+id/criticalTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/detailsTV3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toEndOf="@+id/detailsTV3"
+                app:layout_constraintTop_toTopOf="@+id/detailsTV3" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/detailsTV6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_rlack"
+                android:text="Volunteer Name: "
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/detailsTV5"
+                app:layout_constraintTop_toBottomOf="@+id/detailsTV5" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/detailsTV5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_rlack"
+                android:text="provided Aid:"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/detailsTV4"
+                app:layout_constraintTop_toBottomOf="@+id/detailsTV4" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/detailsTV4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_rlack"
+                android:text="missing_Number:  "
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/detailsTV3"
+                app:layout_constraintTop_toBottomOf="@+id/detailsTV3" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/detailsTV3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_rlack"
+                android:text="Critical Case: "
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/detailsTV2"
+                app:layout_constraintTop_toBottomOf="@+id/detailsTV2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/detailsTV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_rlack"
+                android:text="Road_Description: "
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/detailsTV"
+                app:layout_constraintTop_toBottomOf="@+id/detailsTV" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/roboto_rlack"
+                android:text="Un paid Aid:  "
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/detailsTV6"
+                app:layout_constraintTop_toBottomOf="@+id/detailsTV6"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_rlack"
+                android:text="Family Name: "
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/textView27"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/detailsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_rlack"
+                android:text="Address: "
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_rlack"
+                android:text="Case Number: "
+                android:textColor="@color/RED_color"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/IDtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_rlack"
+                android:text="  "
+                android:textColor="@color/RED_color"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/textView27"
+                app:layout_constraintStart_toEndOf="@+id/textView27"
+                app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+            <TextView
+                android:id="@+id/familyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/name"
+                app:layout_constraintStart_toEndOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/textView27"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/addressTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/detailsTV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toEndOf="@+id/detailsTV"
+                app:layout_constraintTop_toTopOf="@+id/detailsTV" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

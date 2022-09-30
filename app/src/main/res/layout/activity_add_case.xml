@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddCase">
+
+    <Button
+        android:id="@+id/AddCase"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/roboto_bold"
+        android:padding="15dp"
+        android:text="Add Case"
+        android:textSize="14sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/unpaid_aid"
+        app:layout_constraintStart_toStartOf="@+id/unpaid_aid"
+        app:layout_constraintTop_toBottomOf="@+id/unpaid_aid"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <EditText
+        android:id="@+id/unpaid_aid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Unpaid Aid "
+        android:inputType="textMultiLine"
+        android:lines="3"
+        app:layout_constraintEnd_toEndOf="@+id/missingNumb2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/provided"
+        app:layout_constraintTop_toBottomOf="@+id/provided" />
+
+    <EditText
+        android:id="@+id/provided"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Aid provided "
+        android:inputType="textMultiLine"
+        android:lines="3"
+        app:layout_constraintEnd_toEndOf="@+id/missingNumb2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/needed"
+        app:layout_constraintTop_toBottomOf="@+id/needed" />
+
+    <EditText
+        android:id="@+id/volunteerName"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Volunteer Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <EditText
+        android:id="@+id/deathsNum4"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Deaths"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/criticalCase"
+        app:layout_constraintTop_toBottomOf="@+id/criticalCase" />
+
+    <EditText
+        android:id="@+id/missingNumb2"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:ems="10"
+        android:hint="Missing"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/injuriesNum2"
+        app:layout_constraintTop_toTopOf="@+id/injuriesNum2" />
+
+    <EditText
+        android:id="@+id/injuriesNum2"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:ems="10"
+        android:hint="Injuries "
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/deathsNum4"
+        app:layout_constraintTop_toTopOf="@+id/deathsNum4" />
+
+    <EditText
+        android:id="@+id/criticalCase"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Critical cases "
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/childrenNum"
+        app:layout_constraintTop_toBottomOf="@+id/childrenNum" />
+
+    <EditText
+        android:id="@+id/oldNumb"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="Old"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/teenagerNum"
+        app:layout_constraintTop_toTopOf="@+id/teenagerNum" />
+
+    <EditText
+        android:id="@+id/teenagerNum"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint=" Teenagers "
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/childrenNum"
+        app:layout_constraintTop_toTopOf="@+id/childrenNum" />
+
+    <EditText
+        android:id="@+id/totalNumb2"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Total number of people"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fname"
+        app:layout_constraintTop_toBottomOf="@+id/fname" />
+
+    <EditText
+        android:id="@+id/childrenNum"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Children"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/totalNumb2"
+        app:layout_constraintTop_toBottomOf="@+id/totalNumb2" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Family Name "
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/descriptTheRoad"
+        app:layout_constraintTop_toBottomOf="@+id/descriptTheRoad" />
+
+    <EditText
+        android:id="@+id/descriptTheRoad"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Description of the road condition"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/address"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Add Case "
+        android:textColor="@color/green_color"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/volunteerName"
+        app:layout_constraintTop_toBottomOf="@+id/volunteerName" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        android:text="Enter all the data for this family:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <EditText
+        android:id="@+id/needed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Aid Needed "
+        android:inputType="textMultiLine"
+        android:lines="4"
+        app:layout_constraintEnd_toEndOf="@+id/missingNumb2"
+        app:layout_constraintStart_toStartOf="@+id/deathsNum4"
+        app:layout_constraintTop_toBottomOf="@+id/deathsNum4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
